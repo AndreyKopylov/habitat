@@ -1,0 +1,38 @@
+.content-wrapper__table
+  width 100%
+  margin-bottom 20px
+  &__cell
+    padding-left 15px
+    padding-bottom 20px
+    border-left 1px solid border-grey
+    border-bottom 1px solid border-grey
+    vertical-align initial
+    &_normal
+      width 38%
+      padding-left 15px
+      padding-bottom 20px
+      border-left 1px solid border-grey
+      border-bottom 1px solid border-grey
+    &_certificates
+      width 39%
+      border-bottom 1px solid border-grey
+      padding-bottom 20px
+    &_narrow
+      width 24%
+      padding-bottom 20px
+      border-bottom 1px solid border-grey
+  &__title
+    content-grey-title()
+  &__text
+    content-table-text()
+  &__icon
+    position relative
+    &_cancel
+      color #F45F5F
+    &_accept
+      color #0C9A66
+    &:before
+      position absolute
+      top -1px
+      left 10px
+      font-awesome()

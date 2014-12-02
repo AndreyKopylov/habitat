@@ -1,0 +1,101 @@
+.inbox
+  z-index 0
+  position relative
+  width 28.33333%
+  height 100%
+  padding-left 52px
+  float left
+  background #EDF1F2
+  transition all 1s
+  &.menu-active
+    width 38.33333%
+    padding-left 240px
+    transition all 1s
+.inbox__title
+  z-index 2
+  display block
+  position absolute
+  height 100px
+  width 100%
+  margin-left -52px
+  padding-top 36px
+  padding-bottom 36px
+  padding-left 82px
+  sans-regular()
+  font-size 26px
+  color #474E55
+  background #edf1f2
+  border-right 1px solid #D6D8D9
+  border-bottom 1px solid #D6D8D9
+  transition all 1s
+.inbox.menu-active .inbox__title
+  margin-left -240px
+  padding-left 270px
+  transition all 1s
+
+.inbox__title_search:before
+  content "\f002"
+  position absolute
+  right 22px
+  font-awesome()
+  font-size 17px
+  color #5b6168
+#inbox-scroll
+  z-index 1
+  display block
+  position relative
+  padding-top 100px
+  height 100%
+  overflow-y scroll
+#inbox-scroll::-webkit-scrollbar
+  width 0 !important
+.inbox__message
+  position relative
+  padding-top 14px
+  padding-bottom 14px
+  padding-left 30px
+  cursor pointer
+  border-right 1px solid border-grey
+  border-bottom 1px solid border-grey
+.inbox__message_new
+  &:before
+    content ""
+    display block
+    position absolute
+    left 9px
+    top 25px
+    height 8px
+    width 8px
+    border-radius 5px
+    background green-text
+  & .inbox__message_theme
+    sans-bold()
+    font-size 15px
+    line-height 17px
+.inbox__message_mark
+  &:before
+    content ""
+    display block
+    position absolute
+    left 9px
+    top 25px
+    height 8px
+    width 8px
+    border-radius 5px
+    background #EBAF3C
+.inbox__message_active
+    background #fff
+    border-right none
+.inbox__message_date
+  sans-regular()
+  font-size 12px
+  line-height 14px
+  color #8B9095
+.inbox__message_theme
+  color #485057
+  sans-regular()
+  font-size 15px
+  line-height 17px
+
+
+
