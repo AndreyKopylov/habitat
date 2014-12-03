@@ -170,6 +170,15 @@ module.exports = function (grunt) {
 					dest: 'dist',
 					filter: 'isFile'
 				}]
+			},
+			bower: {
+				files: [{
+					expand: true,
+					cwd: 'app/scripts/libs',
+					src: '**/*',
+					dest:'/assets/scripts/libs',
+					filter: 'isFile'
+				}]
 			}
 		},
 

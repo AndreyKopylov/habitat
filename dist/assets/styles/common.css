@@ -406,22 +406,25 @@ a {
 	font-size: 16px;
 }
 
-.content-wrapper__profile__photo {
+.content-wrapper__profile-photo {
 	float: left;
 	margin-right: 25px;
 	border-radius: 6px;
 }
 
-.content-wrapper__profile__title {
+.content-wrapper__profile-title {
+	padding: 6px 0;
+	width: 100px;
 	font-family: 'Sans Regular', sans-serif;
 	line-height: 24px;
 	font-size: 13px;
 	line-height: 20px;
 	text-transform: uppercase;
 	color: #a0a4a7;
+	text-transform: uppercase;
 }
 
-.content-wrapper__profile__text {
+.content-wrapper__profile-text {
 	font-family: 'Sans Regular', sans-serif;
 	line-height: 24px;
 	font-size: 16px;
@@ -429,7 +432,7 @@ a {
 	text-transform: none;
 }
 
-.content-wrapper__profile__text span {
+.content-wrapper__profile-text span {
 	color: #a0a4a7;
 }
 
@@ -519,24 +522,30 @@ a {
 
 .content {
 	min-height: 100%;
-	float: left;
-	width: 71.33333%;
+	float: right;
+	width: 74.66666%;
 	-webkit-transition: width 1s;
 	-o-transition: width 1s;
 	transition: width 1s;
 }
 
 .content.menu-active {
-	width: 61.33333%;
+	width: 65.66666%;
 	-webkit-transition: width 1s;
 	-o-transition: width 1s;
 	transition: width 1s;
 }
 
+.content-scroll {
+	display: block;
+	overflow-y: scroll;
+}
+
 .inbox {
 	z-index: 0;
 	position: relative;
-	width: 28.33333%;
+	overflow: hidden;
+	width: 25.33333%;
 	height: 100%;
 	padding-left: 52px;
 	float: left;
@@ -547,7 +556,7 @@ a {
 }
 
 .inbox.menu-active {
-	width: 38.33333%;
+	width: 34.33333%;
 	padding-left: 240px;
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
@@ -576,14 +585,6 @@ a {
 	transition: all 1s;
 }
 
-.inbox.menu-active .inbox__title {
-	margin-left: -240px;
-	padding-left: 270px;
-	-webkit-transition: all 1s;
-	-o-transition: all 1s;
-	transition: all 1s;
-}
-
 .inbox__title_search:before {
 	content: "\f002";
 	position: absolute;
@@ -591,19 +592,6 @@ a {
 	font-family: 'FontAwesome';
 	font-size: 17px;
 	color: #5b6168;
-}
-
-#inbox-scroll {
-	z-index: 1;
-	display: block;
-	position: relative;
-	padding-top: 100px;
-	height: 100%;
-	overflow-y: scroll;
-}
-
-#inbox-scroll::-webkit-scrollbar {
-	width: 0 !important;
 }
 
 .inbox__message {
@@ -629,6 +617,7 @@ a {
 }
 
 .inbox__message_new .inbox__message_theme {
+	color: #485057;
 	font-family: 'Sans Bold', sans-serif;
 	line-height: 24px;
 	font-size: 15px;
@@ -666,6 +655,27 @@ a {
 	line-height: 24px;
 	font-size: 15px;
 	line-height: 17px;
+}
+
+.inbox.menu-active .inbox__title {
+	margin-left: -240px;
+	padding-left: 270px;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+#inbox-scroll {
+	z-index: 1;
+	display: block;
+	position: relative;
+	padding-top: 100px;
+	height: 100%;
+	overflow-y: scroll;
+}
+
+#inbox-scroll::-webkit-scrollbar {
+	width: 0 !important;
 }
 
 .main {
@@ -753,5 +763,44 @@ a {
 	font-family: 'FontAwesome';
 	font-size: 28px;
 	color: #5b6168;
+}
+
+@media screen and (min-width: 1200px) {
+
+.content {
+	width: 81.66666%;
+}
+
+.inbox {
+	width: 18.33333%;
+}
+
+}
+
+@media screen and (max-width: 1080px) {
+
+.content-head__complete-button {
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.content.menu-active {
+	width: 73.33333%;
+	-webkit-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+}
+
+.inbox.menu-active {
+	width: 0%;
+	padding-left: 240px;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
 }
 

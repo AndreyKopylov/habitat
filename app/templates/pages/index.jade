@@ -1,134 +1,163 @@
 doctype html
 head
-    link(href='assets/styles/common.css?' rel='stylesheet')
-    link(href='assets/styles/libs/font-awesome.css' rel='stylesheet')
+	link(href='assets/styles/common.css?' rel='stylesheet')
+	link(href='assets/styles/libs/font-awesome.css' rel='stylesheet')
+	link(href='assets/scripts/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css' rel='stylesheet')
 body
-    section.col
-        .main
-            .main__logo
-            ul.main__nav
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-compass
-                    a.nav__item__title(href='javascript:void(0)') Dashboard
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-tasks
-                    a.nav__item__title(href='javascript:void(0)') Work Orders
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-copy
-                    a.nav__item__title(href='javascript:void(0)') Certificates
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-users
-                    a.nav__item__title(href='javascript:void(0)') Accounts
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-pie-chart
-                    a.nav__item__title(href='javascript:void(0)') Analytics
-                li.main__nav__item
-                    a(href='javascript:void(0)')
-                        i.main__nav__item__icon.fa-globe
-                    a.nav__item__title(href='javascript:void(0)') Offices
-        .inbox
-            h1.inbox__title Inbox
-                a(href='javascript:void(0)')
-                    i.inbox__title_search
-            #inbox-scroll
-                ul
-                    li.inbox__message.inbox__message_new
-                        h2.inbox__message_date #201405 - 042
-                        p.inbox__message_theme Lady Saliha
-                    li.inbox__message.inbox__message_new.inbox__message_mark.inbox__message_active
-                        h2.inbox__message_date #201405 - 039
-                        p.inbox__message_theme Emma Maersk
-                    li.inbox__message.inbox__message_new
-                        h2.inbox__message_date #201405 - 025
-                        p.inbox__message_theme CSAL Mercury
-                    li.inbox__message.inbox__message_new.inbox__message_mark
-                        h2.inbox__message_date #201405 - 017
-                        p.inbox__message_theme Blowjob CO
-                    li.inbox__message.inbox__message_new
-                        h2.inbox__message_date #201405 - 010
-                        p.inbox__message_theme COSCO Hope
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 007
-                        p.inbox__message_theme Hanjin Harmony
-                    li.inbox__message
-                        h2.inbox__message_date #201404 - 145
-                        p.inbox__message_theme Ain Snan
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 137
-                        p.inbox__message_theme Lappah Sattuh
-                    li.inbox__message.inbox__message_new
-                        h2.inbox__message_date #201405 - 124
-                        p.inbox__message_theme Lady Saliha
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 121
-                        p.inbox__message_theme Untitled
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 112
-                        p.inbox__message_theme Coca-Cola CO
-                    li.inbox__message.inbox__message_new
-                        h2.inbox__message_date #201405 - 110
-                        p.inbox__message_theme Front-end order
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 107
-                        p.inbox__message_theme Untitled
-                    li.inbox__message
-                        h2.inbox__message_date #201405 - 99
-                        p.inbox__message_theme Coca-Cola CO
-        .content
-            .content-head
-                img.content-head__photo(src="assets/images/user-photo.png")
-                h3.content-head__title Created by <span> Nancy Alexander</span> on <span>Feb 05, 2014</span>
-                .content-head__settings-button
-                    i.fa-cog.content-head__settings-button_icon
-                .content-head__complete-button
-                    h3.content-head__complete-button_title Complete Work Order
-            .content-wrapper
-                h2.content-wrapper__title Work Order Details
-                table.content-wrapper__table
-                    tr
-                        td.content-wrapper__table__cell_narrow
-                            h3.content-wrapper__table__title refference #
-                            p.content-wrapper__table__text #201405 - 039
-                        td.content-wrapper__table__cell_normal
-                            h3.content-wrapper__table__title Ship name
-                            p.content-wrapper__table__text Emma Maersk
-                        td.content-wrapper__table__cell_normal
-                            h3.content-wrapper__table__title Ship owner
-                            p.content-wrapper__table__text Deval Transport
-                table.content-wrapper__table
-                    tr
-                        td.content-wrapper__table__cell_narrow
-                            h3.content-wrapper__table__title port
-                            p.content-wrapper__table__text Dakar, Senegal
-                        td.content-wrapper__table__cell_normal
-                            h3.content-wrapper__table__title Estimated time of arrival
-                            p.content-wrapper__table__text Feb 18, 2014 - 14:15
-                        td.content-wrapper__table__cell_normal
-                            h3.content-wrapper__table__title Estimated time of delivery
-                            p.content-wrapper__table__text Feb 20, 2014 - 14:00
-                table.content-wrapper__table
-                    tr
-                        td.content-wrapper__table__cell_certificates
-                            h3.content-wrapper__table__title Certificates
-                            p.content-wrapper__table__text Lifeboat Davit <span>(1 year)</span>
-                                i.content-wrapper__table__icon.fa-check-circle-o.content-wrapper__table__icon_accept
-                            p.content-wrapper__table__text Lifeboat Davit <span>(1 year)</span>
-                                i.content-wrapper__table__icon.fa-times-circle-o.content-wrapper__table__icon_cancel
-                            p.content-wrapper__table__text LSA <span>(1 year)</span>
-                        td.content-wrapper__table__cell
-                            h3.content-wrapper__table__title Extras
-                            p.content-wrapper__table__text -
-                h2.content-wrapper__title Primary contact information
-                img.content-wrapper__profile__photo(alt="profile photo" width="130px" src="assets/images/profile-photo.png")
-                h3.content-wrapper__profile__title name
-                    p.content-wrapper__profile__text Elisabeth Ilsner
-                h3.content-wrapper__profile__title name
-                    p.content-wrapper__profile__text Elisabeth Ilsner
-    script(src="assets/scripts/libs/jquery-2.1.1.min.js")
-    script(src="assets/scripts/common.js")
-    script(src="assets/scripts/libs/jquery.mousewheel.min.js")
+	section.col
+		.main
+			.main__logo
+			ul.main__nav
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-compass
+					a.nav__item__title(href='javascript:void(0)') Dashboard
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-tasks
+					a.nav__item__title(href='javascript:void(0)') Work Orders
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-copy
+					a.nav__item__title(href='javascript:void(0)') Certificates
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-users
+					a.nav__item__title(href='javascript:void(0)') Accounts
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-pie-chart
+					a.nav__item__title(href='javascript:void(0)') Analytics
+				li.main__nav__item
+					a(href='javascript:void(0)')
+						i.main__nav__item__icon.fa-globe
+					a.nav__item__title(href='javascript:void(0)') Offices
+		.inbox
+			h1.inbox__title Inbox
+				a(href='javascript:void(0)')
+					i.inbox__title_search
+			#inbox-scroll
+				ul
+					li.inbox__message.inbox__message_new
+						h2.inbox__message_date #201405 - 042
+						p.inbox__message_theme Lady Saliha
+					li.inbox__message.inbox__message_new.inbox__message_mark.inbox__message_active
+						h2.inbox__message_date #201405 - 039
+						p.inbox__message_theme Emma Maersk
+					li.inbox__message.inbox__message_new
+						h2.inbox__message_date #201405 - 025
+						p.inbox__message_theme CSAL Mercury
+					li.inbox__message.inbox__message_new.inbox__message_mark
+						h2.inbox__message_date #201405 - 017
+						p.inbox__message_theme Blowjob CO
+					li.inbox__message.inbox__message_new
+						h2.inbox__message_date #201405 - 010
+						p.inbox__message_theme COSCO Hope
+					li.inbox__message
+						h2.inbox__message_date #201405 - 007
+						p.inbox__message_theme Hanjin Harmony
+					li.inbox__message
+						h2.inbox__message_date #201404 - 145
+						p.inbox__message_theme Ain Snan
+					li.inbox__message
+						h2.inbox__message_date #201405 - 137
+						p.inbox__message_theme Lappah Sattuh
+					li.inbox__message.inbox__message_new
+						h2.inbox__message_date #201405 - 124
+						p.inbox__message_theme Lady Saliha
+					li.inbox__message
+						h2.inbox__message_date #201405 - 121
+						p.inbox__message_theme Untitled
+					li.inbox__message
+						h2.inbox__message_date #201405 - 112
+						p.inbox__message_theme Coca-Cola CO
+					li.inbox__message.inbox__message_new
+						h2.inbox__message_date #201405 - 110
+						p.inbox__message_theme Front-end order
+					li.inbox__message
+						h2.inbox__message_date #201405 - 107
+						p.inbox__message_theme Untitled
+					li.inbox__message
+						h2.inbox__message_date #201405 - 99
+						p.inbox__message_theme Coca-Cola CO
+					li.inbox__message
+						h2.inbox__message_date #201405 - 99
+						p.inbox__message_theme Coca-Cola CO
+					li.inbox__message
+						h2.inbox__message_date #201405 - 99
+						p.inbox__message_theme Coca-Cola CO
+					li.inbox__message
+						h2.inbox__message_date #201405 - 99
+						p.inbox__message_theme Coca-Cola CO
+		.content
+			.content-scroll
+				.content-head
+					img.content-head__photo(src="assets/images/user-photo.png")
+					h3.content-head__title Created by <span> Nancy Alexander</span> on <span>Feb 05, 2014</span>
+					.content-head__settings-button
+						i.fa-cog.content-head__settings-button_icon
+					.content-head__complete-button
+						h3.content-head__complete-button_title Complete Work Order
+				.content-wrapper
+					h2.content-wrapper__title Work Order Details
+					table.content-wrapper__table
+						tr
+							td.content-wrapper__table__cell_narrow
+								h3.content-wrapper__table__title refference #
+								p.content-wrapper__table__text #201405 - 039
+							td.content-wrapper__table__cell_normal
+								h3.content-wrapper__table__title Ship name
+								p.content-wrapper__table__text Emma Maersk
+							td.content-wrapper__table__cell_normal
+								h3.content-wrapper__table__title Ship owner
+								p.content-wrapper__table__text Deval Transport
+					table.content-wrapper__table
+						tr
+							td.content-wrapper__table__cell_narrow
+								h3.content-wrapper__table__title port
+								p.content-wrapper__table__text Dakar, Senegal
+							td.content-wrapper__table__cell_normal
+								h3.content-wrapper__table__title Estimated time of arrival
+								p.content-wrapper__table__text Feb 18, 2014 - 14:15
+							td.content-wrapper__table__cell_normal
+								h3.content-wrapper__table__title Estimated time of delivery
+								p.content-wrapper__table__text Feb 20, 2014 - 14:00
+					table.content-wrapper__table
+						tr
+							td.content-wrapper__table__cell_certificates
+								h3.content-wrapper__table__title Certificates
+								p.content-wrapper__table__text Lifeboat Davit <span>(1 year)</span>
+									i.content-wrapper__table__icon.fa-check-circle-o.content-wrapper__table__icon_accept
+								p.content-wrapper__table__text Lifeboat Davit <span>(1 year)</span>
+									i.content-wrapper__table__icon.fa-times-circle-o.content-wrapper__table__icon_cancel
+								p.content-wrapper__table__text LSA <span>(1 year)</span>
+							td.content-wrapper__table__cell
+								h3.content-wrapper__table__title Extras
+								p.content-wrapper__table__text -
+					h2.content-wrapper__title Primary contact information
+					img.content-wrapper__profile-photo(alt="profile photo" width="130px" src="assets/images/profile-photo.png")
+					table
+						tr
+							td
+								h3.content-wrapper__profile-title name
+							td
+								p.content-wrapper__profile-text Elisabeth Ilsner
+						tr
+							td
+								h3.content-wrapper__profile-title phone
+							td
+								p.content-wrapper__profile-text +7 (584) 564 - 34 -44 #1208
+						tr
+							td
+								h3.content-wrapper__profile-title gsm
+							td
+								p.content-wrapper__profile-text +7 (584) 564 34 44
+						tr
+							td
+								h3.content-wrapper__profile-title email
+							td
+								p.content-wrapper__profile-text Elisabeth.Ilsner@gmail.com
+	script(src="assets/scripts/libs/jquery-2.1.1.min.js")
+	script(src="assets/scripts/common.js")
+	script(src="assets/scripts/libs/jquery.mousewheel.min.js")
+	script(src="assets/scripts/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"

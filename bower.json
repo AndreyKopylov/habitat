@@ -1,0 +1,16 @@
+{
+  "name": "habitat",
+  "version": "0.0.0",
+  "homepage": "https://github.com/AndreyKopylov/habitat",
+  "authors": [
+    "Andrey Kopylov <andreykopylove@gmail.com>"
+  ],
+  "keywords": [
+    "gh"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "malihu-custom-scrollbar-plugin": "~3.0.6"
+  }
+}

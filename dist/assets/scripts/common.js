@@ -9,9 +9,8 @@ $(document).ready(function(){
         $('.main').removeClass('active')
     });
     });
-    $('.inbox-scroll').bind('mousewheel', function(event) {
-        event.preventDefault();
-        var scrollTop = this.scrollTop;
-        this.scrollTop = (scrollTop + ((event.deltaY * event.deltaFactor) * -1));
-    });
+    $('#inbox-scroll').mCustomScrollbar({
+		axis: "y",
+		theme: "minimal"
+	});
 });
