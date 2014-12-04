@@ -33,9 +33,12 @@ body
 						i.main__nav__item__icon.fa-globe
 					a.nav__item__title(href='javascript:void(0)') Offices
 		.inbox
-			h1.inbox__title Inbox
-				a(href='javascript:void(0)')
-					i.inbox__title_search
+			.inbox-title
+				.inbox-title-wrap
+					h1.inbox-title__text Inbox
+					.inbox-title_search-button
+					input.inbox-title__search-line
+					i.inbox-title__search-close-icon
 			#inbox-scroll
 				ul
 					li.inbox__message.inbox__message_new
@@ -160,4 +163,4 @@ body
 	script(src="assets/scripts/libs/jquery-2.1.1.min.js")
 	script(src="assets/scripts/common.js")
 	script(src="assets/scripts/libs/jquery.mousewheel.min.js")
-	script(src="assets/scripts/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"
+	script(src="assets/scripts/libs/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js")

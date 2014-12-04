@@ -12,14 +12,19 @@
 		width 34.33333%
 		padding-left 240px
 		transition all 1s
-	&__title
+		& .inbox-title
+			padding-left 268px
+	&-title
 		z-index 2
+		opacity 1
 		display block
 		position absolute
+		float left
+		left 0
 		height 100px
 		width 100%
-		margin-left -52px
 		padding-top 36px
+		padding-right 30px
 		padding-bottom 36px
 		padding-left 82px
 		sans-regular()
@@ -29,10 +34,69 @@
 		border-right 1px solid #D6D8D9
 		border-bottom 1px solid #D6D8D9
 		transition all 1s
-	&__title_search:before
+		&.active
+			& .inbox-title__text
+				opacity 0
+				transition all 1s
+			& .inbox-title_search-button
+				opacity 0
+				transition all 1s
+			& .inbox-title__search-line
+				width 100%
+				opacity 1
+				transition all 1s
+		&-wrap
+			position relative
+		&__search
+			&-line
+				position absolute
+				opacity 0
+				height 30px
+				width 1px
+				padding-left 10px
+				padding-bottom 2px
+				padding-top 2px
+				padding-right 10px
+				font-size 16px
+				color #474e55
+				background #fff
+				border 1px solid #b4b6b7
+				border-radius 15px
+				transition all ease 1s
+			&-close-icon
+				display block
+				float left
+				height 24px
+				width 24px
+				cursor pointer
+				transition all ease 1s
+				&:before
+					content '\f055'
+					position absolute
+					opacity 0
+					transform rotate(-180deg)
+					font-awesome()
+					transition all ease 1s
+				&.active
+					padding-left 100%
+					margin-left -27px
+					transition all ease 1s
+					&:before
+						content '\f055'
+						opacity 1
+						top 3.2px
+						transform rotate(45deg)
+						font-awesome()
+						transition all ease 1s
+		&__text
+			position absolute
+			opacity 1
+		&_search-button
+			position absolute
+			cursor pointer
+			right 0
+	&-title_search-button:before
 		content "\f002"
-		position absolute
-		right 22px
 		font-awesome()
 		font-size 17px
 		color #5b6168
